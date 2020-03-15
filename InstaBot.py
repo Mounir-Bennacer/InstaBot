@@ -1,3 +1,5 @@
+# /usr/bin/env python3
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -142,7 +144,7 @@ def launch_bot(bot_username, bot_password, hashtag):
     for link in collected_links:
         bot.like_collected_photos(link)
     # bot.like_photos(hashtag)
-    # bot.close_browser()
+    bot.close_browser()
 
 
 if __name__ == "__main__":
